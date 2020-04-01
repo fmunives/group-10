@@ -36,7 +36,7 @@ body {
 }
 
 .container-special {
-  width: 95%;
+  width: 97.5%;
   margin: 0 0 0 auto;
 }
 
@@ -202,7 +202,11 @@ body {
     margin-bottom: 5px;
   }
 
+  .profile-images .profile-image-item {
+    margin-right: 40px;
+  }
+
   .profile-image-item {
-    width: 77px;
+    min-width: 77px;
   }
 }
