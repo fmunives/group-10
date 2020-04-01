@@ -11,5 +11,198 @@ body {
   padding: 0;
 }
 
+.btn {
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #3897f0;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #3897f0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-special {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+.profile {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "logo account account account"
+    "descrip descrip descrip descrip"
+    "image image image image"
+    "follow follow follow follow";
+}
+
+.profile-logo {
+  grid-area: logo;
+}
+
+.profile-account {
+  grid-area: account;
+}
+
+.profile-follow {
+  grid-area: follow;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.profile-follow p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.profile-follow p span {
+  font-size: 13px;
+  color: #999999;
+  display: block;
+}
+
+.profile-description {
+  grid-area: descrip;
+  font-size: 14px;
+  color: #262626;
+}
+
+.profile-description > * {
+  margin: 3px 0;
+}
+
+.profile-description a {
+  text-decoration: none;
+  color: #003569;
+}
+
+.profile-images {
+  grid-area: image;
+  display: flex;
+  text-align: center;
+  overflow: auto;
+}
+
+.profile-images .profile-image-item {
+  margin-right: 15px;
+}
+
+.profile-images .profile-image-item:last-child {
+  margin-right: 0;
+}
+
+.profile-images span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.profile-image-item {
+  min-width: 56px;
+}
+
+.profile-image-item img {
+  width: 100%;
+}
+
+.profile-logo {
+  width: 77px;
+  height: 77px;
+}
+
+.profile-logo img {
+  width: 100%;
+}
+
+.profile-account .title {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #262626;
+  margin: 7px 0;
+}
+
 @media (min-width: 992px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .container-special {
+    width: 100%;
+    margin: 0;
+  }
+
+  .profile {
+    gap: 0;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "logo account account account"
+      "logo follow follow follow"
+      "logo descrip descrip descrip"
+      "image image image image ";
+  }
+
+  .profile-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-account {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-account .title {
+    margin-right: 45px;
+  }
+
+  .profile-follow {
+    border: none;
+    justify-content: start;
+  }
+
+  .profile-follow > * {
+    margin-right: 40px;
+  }
+
+  .profile-follow p {
+    font-size: 16px;
+    color: #262626;
+  }
+
+  .profile-follow p span {
+    display: inline;
+    font-size: 16px;
+    color: #262626;
+  }
+
+  .profile-description {
+    margin-bottom: 54px;
+  }
+
+  .profile-description > * {
+    margin-bottom: 5px;
+  }
+
+  .profile-image-item {
+    width: 77px;
+  }
 }
