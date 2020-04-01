@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+.full-border-bottom {
+  border-bottom: 1px solid #dbdbdb;
+}
+
 .actions button:first-child {
   margin-right: 20px;
 }
